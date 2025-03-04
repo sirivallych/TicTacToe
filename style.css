@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #969393;
+    text-align:center;
+    /* opacity:0.2; */
+}
+.box{
+    height:80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    height:70vmin;
+    width:70vmin;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    gap:1rem;
+}
+.btn{
+    height:20vmin;
+    width:20vmin;
+    color:brown;
+    font-size: 1.5rem ;
+    border-radius: 15px;
+    border:none;
+    background-color: rgb(246, 230, 208);
+    cursor: pointer;
+}
+.rst{
+    height:7vmin;
+    width:20vmin;
+    font-size: 14px;
+    background-color: black;
+    color: white;
+    border:none;
+    border-radius: 11px;
+}
+.congrats-container {
+    position: fixed;
+    height:100%;
+    width:100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    text-align: center;
+    visibility: hidden;
+}  
+.congo{
+    position:relative;
+    top:40%;
+    font-size: larger;
+}
+.congo h2{
+    padding-bottom:12px;
+    /* border:1px solid black; */
+}
+@media (max-width: 450px) {
+    .rst {
+        height:10vmin;
+        width: 30vmin; 
+        /* padding: 15px; */
+        font-size: 14px;  
+    }
+}
