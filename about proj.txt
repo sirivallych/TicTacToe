@@ -1,0 +1,51 @@
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+git remote add origin https://github.com/your-username/LibraryRegistration.git
+git branch -M main
+git push -u origin main
+
+adding new feature
+git checkout -b feature/search_flights_by_airline
+git add .
+git commit -m "Add flight search by airline"
+git push -u origin feature/search_flights_by_airline
+
+team mate updates
+git checkout main
+git pull origin main
+git checkout paymentintegration
+git merge main
+
+Open login.jsp
+
+Find and resolve conflict markers (<<<<<<<, =======, >>>>>>>)
+
+git add login.jsp
+git commit -m "resolved"
+
+# Local
+git branch -d search_flights_by_airline
+
+# Remote
+git push origin --delete search_flights_by_airline
+
+git add BookingRegister.jsp
+git commit -m "Update BookingRegister.jsp"
+git push
+
+git clone https://github.com/org/repo.git
+
+git log                                # Find the commit hash
+git revert <commit-hash>
+git push origin main
+
+git fetch --all
+git branch -r
+
+git log -1 -- register.jsp
+
+git show
+
+git show <commit-hash>
+
